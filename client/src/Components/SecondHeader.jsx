@@ -46,25 +46,26 @@ function SecondHeader({ }) {
                                 <div className="store_nav" data-panel={{"flow-children": "row"}}>
                                     <div className="tab  flyout_tab " id="foryou_tab" data-flyout="foryou_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-delay="300" data-panel={{"focusable": true}} onMouseEnter={() => handleMouseEnter("Your Store")} onMouseLeave={handleMouseLeave}>
                                         <span className="pulldown">
-                                            <a className="pulldown_desktop" href="https://store.steampowered.com/?snr=1_5_9__12">{`Sua loja`}</a>
-                                            <a className="pulldown_mobile" href="#">Sua loja</a>
+                                            <a className="pulldown_desktop" href="">{`Sua loja`}</a>
+                                            <a className="pulldown_mobile" href="#">Your Store</a>
                                             <span></span>
                                         </span>
                                     </div>
                                     <div className="popup_block_new flyout_tab_flyout responsive_slidedown" id="foryou_flyout" style={{visibility: "visible", top: "42px", left: "0px", display: hoveredMenu === "Your Store" ? "block" : "none", opacity: 1}} onMouseEnter={() => handleMouseEnter("Your Store")} onMouseLeave={handleMouseLeave}>
                                         <div className="popup_body popup_menu popup_menu_browse">
-                                            <a className="popup_menu_item" href="https://store.steampowered.com/?snr=1_5_9__12"> Home </a>
-                                            <a className="popup_menu_item" href="https://store.steampowered.com/communityrecommendations/?snr=1_5_9__12">Community Recommendations</a>
-                                            <a className="popup_menu_item" href="https://store.steampowered.com/recommended/?snr=1_5_9__12"> Recently Viewed </a>
-                                            <a className="popup_menu_item" href="https://store.steampowered.com/curators/?snr=1_5_9__12"> Steam Curators </a>
+                                            <a className="popup_menu_item" href=""> Home </a>
+                                            <a className="popup_menu_item" href="">Community Recommendations</a>
+                                            <a className="popup_menu_item" href=""> Recently Viewed </a>
+                                            <a className="popup_menu_item" href=""> Steam Curators </a>
                                         </div>
                                     </div>
                                     <div className="store_labs_new"></div>
                                     <div className="tab  flyout_tab" id="noteworthy_tab" data-flyout="noteworthy_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-delay="300" data-panel={{"focusable": true}} onMouseEnter={() => handleMouseEnter("Noteworthy")} onMouseLeave={handleMouseLeave}>
                                         <span className="pulldown">
                                             <a href="#" className="pulldown_desktop">{`Novidades e tendências`}</a>
-                                            <a href="#" className="pulldown_mobile">Novidades e tendências</a>
+                                            <a href="#" className="pulldown_mobile">New & Noteworthy</a>
                                             <span></span>
+                                            
                                         </span>
                                     </div>
                                     <div className="popup_block_new flyout_tab_flyout responsive_slidedown" id="noteworthy_flyout" style={{visibility: "visible", top: "42px", left: "96.125px", display: hoveredMenu === "Noteworthy" ? "block" : "none", opacity: 1}} onMouseEnter={() => handleMouseEnter("Noteworthy")} onMouseLeave={handleMouseLeave}>
@@ -96,7 +97,7 @@ function SecondHeader({ }) {
                                     <div className="tab  flyout_tab" id="genre_tab" data-flyout="genre_flyout" data-flyout-align="left" data-flyout-valign="bottom" data-flyout-align-to-element="foryou_tab" data-flyout-delay="300" data-panel={{"focusable": true}} onMouseEnter={() => handleMouseEnter("Categories")} onMouseLeave={handleMouseLeave}>
                                         <span className="pulldown">
                                             <a className="pulldown_desktop" href="#">{`Categorias`}</a>
-                                            <a className="pulldown_mobile" href="#">Categorias</a>
+                                            <a className="pulldown_mobile" href="#">Categories</a>
                                             <span></span>
                                         </span>
                                     </div>
@@ -104,39 +105,39 @@ function SecondHeader({ }) {
                                         <div className="popup_body popup_menu_twocol_new">
                                             <div className="popup_menu popup_menu_browse" data-panel={{"maintainY": true, "flow-children": "column"}}>
                                                 <div className="popup_menu_subheader responsive_hidden">Special Sections</div>
-                                                <a className="popup_menu_item" href="https://store.steampowered.com/genre/Free%20to%20Play/?snr=1_5_9__12"> Free to Play </a>
-                                                <a className="popup_menu_item" href="https://store.steampowered.com/demos/?snr=1_5_9__12">
+                                                <a className="popup_menu_item" href=""> Free to Play </a>
+                                                <a className="popup_menu_item" href="">
                                                     <span>Demos</span>
                                                 </a>
-                                                <a className="popup_menu_item" href="https://store.steampowered.com/genre/Early%20Access/?snr=1_5_9__12"> Early Access </a>
+                                                <a className="popup_menu_item" href=""> Early Access </a>
                                                 <div className="category_hr responsive_hidden"></div>
-                                                <a className="popup_menu_item" href="https://store.steampowered.com/steamdeck/?snr=1_5_9__category-menu">
+                                                <a className="popup_menu_item" href="">
                                                     <span>Steam Deck</span>
                                                 </a>
-                                                <a className="popup_menu_item" href="https://store.steampowered.com/greatondeck/?snr=1_5_9__category-menu">
+                                                <a className="popup_menu_item" href="">
                                                     <span>Great on Deck</span>
                                                 </a>
                                                 <div className="category_hr responsive_hidden"></div>
-                                                <a className="popup_menu_item" href="https://store.steampowered.com/controller/?snr=1_5_9__12">
+                                                <a className="popup_menu_item" href="">
                                                     <span>Controller-Friendly</span>
                                                 </a>
-                                                <a className="popup_menu_item" href="https://store.steampowered.com/remoteplay_hub/?snr=1_5_9__12">
+                                                <a className="popup_menu_item" href="">
                                                     <span>Remote Play</span>
                                                 </a>
                                                 <div className="category_hr responsive_hidden"></div>
-                                                <a className="popup_menu_item" href="https://store.steampowered.com/vr/?snr=1_5_9__12">
+                                                <a className="popup_menu_item" href="">
                                                     <span>VR Titles</span>
                                                 </a>
-                                                <a className="popup_menu_item" href="https://store.steampowered.com/vrhardware/?snr=1_5_9__12">
+                                                <a className="popup_menu_item" href="">
                                                     <span>VR Hardware</span>
                                                 </a>
                                                 <div className="category_hr responsive_hidden"></div>
-                                                <a className="popup_menu_item" href="https://store.steampowered.com/software/?snr=1_5_9__12"> Software </a>
-                                                <a className="popup_menu_item" href="https://store.steampowered.com/soundtracks?snr=1_5_9__12"> Soundtracks </a>
+                                                <a className="popup_menu_item" href=""> Software </a>
+                                                <a className="popup_menu_item" href=""> Soundtracks </a>
                                                 <div className="category_hr responsive_hidden"></div>
-                                                <a className="popup_menu_item" href="https://store.steampowered.com/macos?snr=1_5_9__12"> macOS </a>
-                                                <a className="popup_menu_item" href="https://store.steampowered.com/linux?snr=1_5_9__12"> SteamOS + Linux </a>
-                                                <a className="popup_menu_item" href="https://store.steampowered.com/pccafe/?snr=1_5_9__12">
+                                                <a className="popup_menu_item" href=""> macOS </a>
+                                                <a className="popup_menu_item" href=""> SteamOS + Linux </a>
+                                                <a className="popup_menu_item" href="">
                                                     <span>For PC Cafés</span>
                                                 </a>
                                             </div>
@@ -144,29 +145,29 @@ function SecondHeader({ }) {
                                                 <div className="popup_menu_subheader reduced_vspace"> Genres </div>
                                                 <div className="popup_menu_item popup_genre_expand_header nonresponsive_hidden" data-genre-group="action"> Action </div>
                                                 <div className="popup_menu_subheader popup_genre_expand_header responsive_hidden" data-genre-group="action">
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/action/?snr=1_5_9__12"> Action </a>
+                                                    <a className="popup_menu_item" href=""> Action </a>
                                                 </div>
                                                 <div className="popup_genre_expand_content responsive_hidden" data-genre-group="action">
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/arcade_rhythm/?snr=1_5_9__12">Arcade & Rhythm</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/fighting_martial_arts/?snr=1_5_9__12">Fighting & Martial Arts</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/action_fps/?snr=1_5_9__12">First-Person Shooter</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/hack_and_slash/?snr=1_5_9__12">Hack & Slash</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/action_run_jump/?snr=1_5_9__12">Platformer & Runner</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/action_tps/?snr=1_5_9__12">Third-Person Shooter</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/shmup/?snr=1_5_9__12">shmup</a>
+                                                    <a className="popup_menu_item" href="">Arcade & Rhythm</a>
+                                                    <a className="popup_menu_item" href="">Fighting & Martial Arts</a>
+                                                    <a className="popup_menu_item" href="">First-Person Shooter</a>
+                                                    <a className="popup_menu_item" href="">Hack & Slash</a>
+                                                    <a className="popup_menu_item" href="">Platformer & Runner</a>
+                                                    <a className="popup_menu_item" href="">Third-Person Shooter</a>
+                                                    <a className="popup_menu_item" href="">shmup</a>
                                                 </div>
                                                 <div className="popup_menu_item popup_genre_expand_header nonresponsive_hidden" data-genre-group="adventure"> Adventure </div>
                                                 <div className="popup_menu_subheader popup_genre_expand_header responsive_hidden" data-genre-group="adventure">
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/adventure/?snr=1_5_9__12"> Adventure </a>
+                                                    <a className="popup_menu_item" href=""> Adventure </a>
                                                 </div>
                                                 <div className="popup_genre_expand_content responsive_hidden" data-genre-group="adventure">
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/adventure_rpg/?snr=1_5_9__12">Adventure RPG</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/casual/?snr=1_5_9__12">Casual</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/hidden_object/?snr=1_5_9__12">Hidden Object</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/metroidvania/?snr=1_5_9__12">Metroidvania</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/puzzle_matching/?snr=1_5_9__12">Puzzle</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/story_rich/?snr=1_5_9__12">Story-Rich</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/visual_novel/?snr=1_5_9__12">Visual Novel</a>
+                                                    <a className="popup_menu_item" href="">Adventure RPG</a>
+                                                    <a className="popup_menu_item" href="">Casual</a>
+                                                    <a className="popup_menu_item" href="">Hidden Object</a>
+                                                    <a className="popup_menu_item" href="">Metroidvania</a>
+                                                    <a className="popup_menu_item" href="">Puzzle</a>
+                                                    <a className="popup_menu_item" href="">Story-Rich</a>
+                                                    <a className="popup_menu_item" href="">Visual Novel</a>
                                                 </div>
                                             </div>
                                             <div className="popup_menu popup_menu_browse " data-panel={{"maintainY": true, "flow-children": "column"}}>
@@ -175,29 +176,29 @@ function SecondHeader({ }) {
                                                 </div>
                                                 <div className="popup_menu_item popup_genre_expand_header nonresponsive_hidden" data-genre-group="rpg"> Role-Playing </div>
                                                 <div className="popup_menu_subheader popup_genre_expand_header responsive_hidden" data-genre-group="rpg">
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/rpg/?snr=1_5_9__12"> Role-Playing </a>
+                                                    <a className="popup_menu_item" href=""> Role-Playing </a>
                                                 </div>
                                                 <div className="popup_genre_expand_content responsive_hidden" data-genre-group="rpg">
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/rpg_action/?snr=1_5_9__12">Action RPG</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/adventure_rpg/?snr=1_5_9__12">Adventure RPG</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/rpg_jrpg/?snr=1_5_9__12">JRPG</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/rpg_party_based/?snr=1_5_9__12">Party-Based</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/rogue_like_rogue_lite/?snr=1_5_9__12">Rogue-Like</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/rpg_strategy_tactics/?snr=1_5_9__12">Strategy RPG</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/rpg_turn_based/?snr=1_5_9__12">Turn-Based</a>
+                                                    <a className="popup_menu_item" href="">Action RPG</a>
+                                                    <a className="popup_menu_item" href="">Adventure RPG</a>
+                                                    <a className="popup_menu_item" href="">JRPG</a>
+                                                    <a className="popup_menu_item" href="">Party-Based</a>
+                                                    <a className="popup_menu_item" href="">Rogue-Like</a>
+                                                    <a className="popup_menu_item" href="">Strategy RPG</a>
+                                                    <a className="popup_menu_item" href="">Turn-Based</a>
                                                 </div>
                                                 <div className="popup_menu_item popup_genre_expand_header nonresponsive_hidden" data-genre-group="simulation"> Simulation </div>
                                                 <div className="popup_menu_subheader popup_genre_expand_header responsive_hidden" data-genre-group="simulation">
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/simulation/?snr=1_5_9__12"> Simulation </a>
+                                                    <a className="popup_menu_item" href=""> Simulation </a>
                                                 </div>
                                                 <div className="popup_genre_expand_content responsive_hidden" data-genre-group="simulation">
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/sim_building_automation/?snr=1_5_9__12">Building & Automation</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/sim_dating/?snr=1_5_9__12">Dating</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/sim_farming_crafting/?snr=1_5_9__12">Farming & Crafting</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/sim_hobby_sim/?snr=1_5_9__12">Hobby & Job</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/sim_life/?snr=1_5_9__12">Life & Immersive</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/sim_physics_sandbox/?snr=1_5_9__12">Sandbox & Physics</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/sim_space_flight/?snr=1_5_9__12">Space & Flight</a>
+                                                    <a className="popup_menu_item" href="">Building & Automation</a>
+                                                    <a className="popup_menu_item" href="">Dating</a>
+                                                    <a className="popup_menu_item" href="">Farming & Crafting</a>
+                                                    <a className="popup_menu_item" href="">Hobby & Job</a>
+                                                    <a className="popup_menu_item" href="">Life & Immersive</a>
+                                                    <a className="popup_menu_item" href="">Sandbox & Physics</a>
+                                                    <a className="popup_menu_item" href="">Space & Flight</a>
                                                 </div>
                                             </div>
                                             <div className="popup_menu popup_menu_browse " data-panel={{"maintainY": true, "flow-children": "column"}}>
@@ -206,66 +207,66 @@ function SecondHeader({ }) {
                                                 </div>
                                                 <div className="popup_menu_item popup_genre_expand_header nonresponsive_hidden" data-genre-group="strategy"> Strategy </div>
                                                 <div className="popup_menu_subheader popup_genre_expand_header responsive_hidden" data-genre-group="strategy">
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/strategy/?snr=1_5_9__12"> Strategy </a>
+                                                    <a className="popup_menu_item" href=""> Strategy </a>
                                                 </div>
                                                 <div className="popup_genre_expand_content responsive_hidden" data-genre-group="strategy">
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/strategy_card_board/?snr=1_5_9__12">Card & Board</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/strategy_cities_settlements/?snr=1_5_9__12">City & Settlement</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/strategy_grand_4x/?snr=1_5_9__12">Grand & 4X</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/strategy_military/?snr=1_5_9__12">Military</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/strategy_real_time/?snr=1_5_9__12">Real-Time Strategy</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/tower_defense/?snr=1_5_9__12">Tower Defense</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/strategy_turn_based/?snr=1_5_9__12">Turn-Based Strategy</a>
+                                                    <a className="popup_menu_item" href="">Card & Board</a>
+                                                    <a className="popup_menu_item" href="">City & Settlement</a>
+                                                    <a className="popup_menu_item" href="">Grand & 4X</a>
+                                                    <a className="popup_menu_item" href="">Military</a>
+                                                    <a className="popup_menu_item" href="">Real-Time Strategy</a>
+                                                    <a className="popup_menu_item" href="">Tower Defense</a>
+                                                    <a className="popup_menu_item" href="">Turn-Based Strategy</a>
                                                 </div>
                                                 <div className="popup_menu_item popup_genre_expand_header nonresponsive_hidden" data-genre-group="sports_and_racing"> Sports & Racing </div>
                                                 <div className="popup_menu_subheader popup_genre_expand_header responsive_hidden" data-genre-group="sports_and_racing">
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/sports_and_racing/?snr=1_5_9__12"> Sports & Racing </a>
+                                                    <a className="popup_menu_item" href=""> Sports & Racing </a>
                                                 </div>
                                                 <div className="popup_genre_expand_content responsive_hidden" data-genre-group="sports_and_racing">
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/sports/?snr=1_5_9__12">All Sports</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/sports_fishing_hunting/?snr=1_5_9__12">Fishing & Hunting</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/sports_individual/?snr=1_5_9__12">Individual Sports</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/racing/?snr=1_5_9__12">Racing</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/racing_sim/?snr=1_5_9__12">Racing Sim</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/sports_sim/?snr=1_5_9__12">Sports Sim</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/sports_team/?snr=1_5_9__12">Team Sports</a>
+                                                    <a className="popup_menu_item" href="">All Sports</a>
+                                                    <a className="popup_menu_item" href="">Fishing & Hunting</a>
+                                                    <a className="popup_menu_item" href="">Individual Sports</a>
+                                                    <a className="popup_menu_item" href="">Racing</a>
+                                                    <a className="popup_menu_item" href="">Racing Sim</a>
+                                                    <a className="popup_menu_item" href="">Sports Sim</a>
+                                                    <a className="popup_menu_item" href="">Team Sports</a>
                                                 </div>
                                             </div>
                                             <div className="popup_menu popup_menu_browse leftborder" data-panel={{"maintainY": true, "flow-children": "column"}}>
                                                 <div className="popup_menu_item popup_genre_expand_header nonresponsive_hidden" data-genre-group="themes"> Themes </div>
                                                 <div className="popup_menu_subheader players popup_genre_expand_header responsive_hidden"> Themes </div>
                                                 <div className="popup_genre_expand_content responsive_hidden" data-genre-group="themes">
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/anime/?snr=1_5_9__12">Anime</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/horror/?snr=1_5_9__12">Horror</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/mystery_detective/?snr=1_5_9__12">Mystery & Detective</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/exploration_open_world/?snr=1_5_9__12">Open World</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/science_fiction/?snr=1_5_9__12">Sci-Fi & Cyberpunk</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/space/?snr=1_5_9__12">Space</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/survival/?snr=1_5_9__12">Survival</a>
+                                                    <a className="popup_menu_item" href="">Anime</a>
+                                                    <a className="popup_menu_item" href="">Horror</a>
+                                                    <a className="popup_menu_item" href="">Mystery & Detective</a>
+                                                    <a className="popup_menu_item" href="">Open World</a>
+                                                    <a className="popup_menu_item" href="">Sci-Fi & Cyberpunk</a>
+                                                    <a className="popup_menu_item" href="">Space</a>
+                                                    <a className="popup_menu_item" href="">Survival</a>
                                                     <div className="spacer responsive_hidden"></div>
                                                 </div>
                                                 <div className="popup_menu_item popup_genre_expand_header nonresponsive_hidden" data-genre-group="social_and_players"> Player Support </div>
                                                 <div className="popup_menu_subheader players popup_genre_expand_header responsive_hidden"> Player Support </div>
                                                 <div className="popup_genre_expand_content responsive_hidden" data-genre-group="social_and_players">
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/multiplayer_coop/?snr=1_5_9__12">Co-Operative</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/multiplayer_lan/?snr=1_5_9__12">LAN</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/multiplayer_local_party/?snr=1_5_9__12">Local & Party</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/multiplayer_mmo/?snr=1_5_9__12">MMO</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/multiplayer/?snr=1_5_9__12">Multiplayer</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/multiplayer_online_competitive/?snr=1_5_9__12">Online Competitive</a>
-                                                    <a className="popup_menu_item" href="https://store.steampowered.com/category/singleplayer/?snr=1_5_9__12">Singleplayer</a>
+                                                    <a className="popup_menu_item" href="">Co-Operative</a>
+                                                    <a className="popup_menu_item" href="">LAN</a>
+                                                    <a className="popup_menu_item" href="">Local & Party</a>
+                                                    <a className="popup_menu_item" href="">MMO</a>
+                                                    <a className="popup_menu_item" href="">Multiplayer</a>
+                                                    <a className="popup_menu_item" href="">Online Competitive</a>
+                                                    <a className="popup_menu_item" href="">Singleplayer</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <a className="tab  " href="https://store.steampowered.com/points/?snr=1_5_9__12">
-                                        <span>Loja de pontos</span>
+                                    <a className="tab  " href="">
+                                        <span>Points Shop</span>
                                     </a>
-                                    <a className="tab  " href="https://store.steampowered.com/news/?snr=1_5_9__12">
-                                        <span>Notícias</span>
+                                    <a className="tab  " href="">
+                                        <span>News</span>
                                     </a>
-                                    <a className="tab  " href="https://store.steampowered.com/labs/?snr=1_5_9__12">
-                                        <span>Laboratório</span>
+                                    <a className="tab  " href="">
+                                        <span>Labs</span>
                                     </a>
                                     <div className="search_flex_spacer"></div>
                                     <div className="search_area">
@@ -273,7 +274,7 @@ function SecondHeader({ }) {
                                             <form id="searchform" name="searchform" method="get" action="https://store.steampowered.com/search/" onSubmit={SearchSuggestCheckTerm()} role="search">
                                                 <input type="hidden" name="snr" value="1_5_9__12"></input>
                                                 <div className="searchbox">
-                                                    <input id="store_nav_search_term" name="term" type="search" className="default" placeholder="Buscar" size="22" autoComplete="off" maxLength="64"></input>
+                                                    <input id="store_nav_search_term" name="term" type="search" className="default" placeholder="Search" size="22" autoComplete="off" maxLength="64"></input>
                                                     <a href="#" id="store_search_link" onClick={(e) => {var $Form = $J(this).parents('form'); $Form.submit(); return false;}} aria-label="Search Steam">
                                                         <img src="https://store.akamai.steamstatic.com/public/images/blank.gif"></img>
                                                     </a>

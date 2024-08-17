@@ -31,9 +31,9 @@ function Header({}) {
               aria-label="Link to the Steam Homepage"
             >
               <img
-                src="https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
-                width="176"
-                height="44"
+                src="/img/MoonConnectLogo.png"
+                width="190"
+                height="110"
                 alt="Link to the Steam Homepage"
               />
             </a>
@@ -56,7 +56,7 @@ function Header({}) {
               color: selectedLink === "Store" ? "#1a9fff" : "#dcdedf",
             }}
           >
-            LOJA
+            STORE
           </a>
           <a
             className={selectedLink === "Community" ? "menuitem supernav_active" : "menuitem supernav"}
@@ -70,16 +70,16 @@ function Header({}) {
               color: selectedLink === "Community" ? "#1a9fff" : "#dcdedf",
             }}
           >
-            COMUNIDADE
+            COMUNNITY
           </a>
           <a
             className="menuitem "
             href="https://store.steampowered.com/about/?snr=1_5_9__global-header"
           >
-            SOBRE
+            ABOUT
           </a>
           <a className="menuitem " href="https://help.steampowered.com/en/">
-            SUPORTE
+            SUPPORT
           </a>
           <div
             className="supernav_content"

@@ -179,10 +179,9 @@ div#global_header .submenuitem:hover {
 
 div#global_header div.logo {
 	float: left;
-	padding-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 40px;
 	margin-right: 40px;
-	width: 176px;
-	height: 44px;
 }
 
 .supernav_content a.submenuitem {
@@ -304,6 +303,80 @@ div#global_actions a.global_action_link {
 	text-align: left;
 	cursor: pointer;
 }
+
+/* Personalização do contêiner do carrossel */
+.carousel {
+	position: relative; /* Necessário para posicionar flechas em relação ao carrossel */
+  }
+  
+  /* Ajuste as flechas de navegação */
+  .carousel-control-prev,
+  .carousel-control-next {
+	width: 5%; /* Ajuste o tamanho das flechas, se necessário */
+	height: 100%; /* Garante que as flechas ocupem toda a altura do carrossel */
+	top: 0; /* Posiciona as flechas no topo do carrossel */
+	background-color: none; /* Cor de fundo semi-transparente para as flechas */
+	z-index: 1; /* Garante que as flechas estejam acima das imagens */
+  }
+  
+  /* Posiciona as flechas à esquerda e à direita */
+  .carousel-control-prev {
+	left: -50px; /* Ajuste a posição horizontal para fora do carrossel */
+  }
+  
+  .carousel-control-next {
+	right: -50px; /* Ajuste a posição horizontal para fora do carrossel */
+  }
+  
+  /* Ajuste o ícone das flechas */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+	background-color: rgba(255, 255, 255, 0.5); /* Cor do ícone das flechas */
+	border-radius: 5px; /* Torna o ícone das flechas redondo */
+	width: 40px; /* Ajuste o tamanho do ícone das flechas */
+	height: 40px; /* Ajuste o tamanho do ícone das flechas */
+  }
+  
+
+/* Carousel image e card */
+
+.carousel-item-content {
+	display: flex;
+  }
+  
+  .carousel-image-container {
+	width: 616px; /* Largura da imagem */
+	height: 353px; /* Altura da imagem */
+	overflow: hidden; /* Garante que a imagem não ultrapasse o container */
+	display: flex; /* Flexbox para centralizar a imagem */
+	align-items: center; /* Alinha a imagem verticalmente no centro */
+	justify-content: center; /* Alinha a imagem horizontalmente no centro */
+  }
+  
+  .carousel-image {
+	width: 100%; /* Faz com que a imagem ocupe 100% da largura do container */
+	height: 100%; /* Faz com que a imagem ocupe 100% da altura do container */
+	object-fit: cover; /* Faz com que a imagem preencha o container, mantendo a proporção */
+  }
+  
+  .carousel-card {
+	margin-left: 20px; /* Espaçamento entre a imagem e o card */
+	width: 300px; /* Largura do card */
+	padding: 10px;
+	background-color: none; /* Cor de fundo do card */
+	border: 1px; /* Borda do card */
+	border-radius: 2px; /* Cantos arredondados do card */
+  }
+  
+  .carousel-card h3 {
+	margin: 0 0 10px 0; /* Espaçamento abaixo do título */
+  }
+  
+  .carousel-card p {
+	margin: 0; /* Remove margem do parágrafo */
+  }
+  
+
 
 .v6_bg {
 	/* background: url( '/public/images/v6/tag_browse_header_bg.png' ) no-repeat center top; */
@@ -8716,13 +8789,6 @@ video {
 	top: 0;
 }
 
-.game_background_glow {
-	background: url( 'https://store.akamai.steamstatic.com/public/images/v6/app/game_page_background_shadow.png?v=2' );
-	background-position: bottom;
-	padding-bottom: 1px;
-	background-repeat: no-repeat;
-	margin: 0px auto;
-}
 
 .queue_ctn {
     width: 940px;
