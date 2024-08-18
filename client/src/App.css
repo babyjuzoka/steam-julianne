@@ -312,35 +312,43 @@ div#global_actions a.global_action_link {
   /* Ajuste as flechas de navegação */
   .carousel-control-prev,
   .carousel-control-next {
-	width: 5%; /* Ajuste o tamanho das flechas, se necessário */
-	height: 100%; /* Garante que as flechas ocupem toda a altura do carrossel */
-	top: 0; /* Posiciona as flechas no topo do carrossel */
-	background-color: none; /* Cor de fundo semi-transparente para as flechas */
-	z-index: 1; /* Garante que as flechas estejam acima das imagens */
+	width: 23px;
+	height: 36px;
+	top: 40%;
+	z-index: 3; /* Garante que as flechas estejam acima das imagens */
   }
   
   /* Posiciona as flechas à esquerda e à direita */
   .carousel-control-prev {
-	left: -50px; /* Ajuste a posição horizontal para fora do carrossel */
+	left: -40px; /* Ajuste a posição horizontal para fora do carrossel */
+	padding: 36px 20px;
+	background: linear-gradient( to left,  rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.3) 95%);
   }
   
   .carousel-control-next {
-	right: -50px; /* Ajuste a posição horizontal para fora do carrossel */
+	right: -40px; /* Ajuste a posição horizontal para fora do carrossel */
+	padding: 36px 20px;
+	background: linear-gradient( to right, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.3) 95%);
+  }
+  
+  /* Efeito hover nas setas */
+  .carousel-control-prev:hover {
+	background: linear-gradient( to left, rgba(171, 218, 244, 0.3) 5%, rgba(171, 218, 244, 0) 95%);
+  }
+  
+  .carousel-control-next:hover {
+	background: linear-gradient( to right, rgba(171, 218, 244, 0.3) 5%, rgba(171, 218, 244, 0) 95%);
   }
   
   /* Ajuste o ícone das flechas */
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
-	background-color: rgba(255, 255, 255, 0.5); /* Cor do ícone das flechas */
-	border-radius: 5px; /* Torna o ícone das flechas redondo */
-	width: 40px; /* Ajuste o tamanho do ícone das flechas */
-	height: 40px; /* Ajuste o tamanho do ícone das flechas */
+	border-radius: 0px; /* Torna o ícone das flechas redondo */
+	padding: 36px 20px;
   }
   
-
-/* Carousel image e card */
-
-.carousel-item-content {
+  /* Carousel image e card */
+  .carousel-item-content {
 	display: flex;
   }
   
@@ -364,7 +372,6 @@ div#global_actions a.global_action_link {
 	width: 300px; /* Largura do card */
 	padding: 10px;
 	background-color: none; /* Cor de fundo do card */
-	border: 1px; /* Borda do card */
 	border-radius: 2px; /* Cantos arredondados do card */
   }
   
@@ -376,7 +383,36 @@ div#global_actions a.global_action_link {
 	margin: 0; /* Remove margem do parágrafo */
   }
   
-
+/* Estilos gerais dos indicadores */
+.carousel-indicators {
+	position: absolute !important; /* Mantém o controle da posição */
+	bottom: -40px !important; /* Afasta da imagem */
+	display: flex !important;
+	justify-content: center !important; /* Centraliza */
+	align-items: center !important;
+  }
+  
+  /* Estilos dos botões */
+  .carousel-indicators button[data-bs-target] {
+	width: 15px !important;
+	height: 9px !important;
+	background-color: rgba(255, 255, 255, 0.5) !important;
+	border-radius: 0.1rem !important;
+	border: none !important;
+	margin: 12px 2px !important;
+	opacity: 0.5 !important;
+	transition: background-color 0.3s ease !important;
+	position: relative; /* Respeita o container, sem causar caos */
+  }
+  
+  .carousel-indicators button[data-bs-target]:hover {
+	background-color: rgb(255, 255, 255) !important; /* Cor no hover */
+  }
+  
+  .carousel-indicators .active {
+	background-color: rgba(255, 255, 255, 1) !important; /* Cor do botão ativo */
+  }
+  
 
 .v6_bg {
 	/* background: url( '/public/images/v6/tag_browse_header_bg.png' ) no-repeat center top; */
