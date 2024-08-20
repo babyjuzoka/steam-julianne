@@ -1,12 +1,10 @@
 {
-    "routes": [
-        {
-            "src": "/",
-            "dest": "/"
-        },
-        {
-            "src": "/test",
-            "dest": "/"
-        }
+    "public": "client", 
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/client/index.html"
+      }
     ]
-}
+  }
+  
