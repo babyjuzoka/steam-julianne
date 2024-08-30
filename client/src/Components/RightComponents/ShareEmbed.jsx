@@ -37,6 +37,6 @@ const ShareEmbed = () => {
       ></div>
     </>
   );
-};
+}
 
 export default ShareEmbed;

@@ -7682,7 +7682,7 @@ h2.underline {
 
 .game_page_autocollapse_ctn.collapsed .game_page_autocollapse_fade {
     display: block;
-};
+}
 
 .game_page_autocollapse {
     overflow: hidden;
@@ -7712,7 +7712,7 @@ h2.underline {
 .sysreq_tab.active, .discselect_tab.active {
     background-color: #18222e;
     color: #67c1f5;
-    cusor: default;
+    cursor: default;
 }
 
 .sysreq_tab, .discselect_tab {
